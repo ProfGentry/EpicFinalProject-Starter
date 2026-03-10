@@ -45,12 +45,12 @@ It directs traffic between other classes.
  * This class coordinates user interaction, menu navigation,
  * and communication between other project classes.
  *
- * In professional applications this type of class is often
- * called a "controller" or "application manager".
+ * In professional software systems this type of class is
+ * often called a controller or application manager.
  */
 public class Game {
 
-    /** Scanner used for reading keyboard input */
+    /** Scanner used for reading user input */
     private Scanner input;
 
     /** Controls whether the application loop continues running */
@@ -59,21 +59,29 @@ public class Game {
     /** Represents the player for the current session */
     private Player player;
 
+    /** Represents the current game mode */
+    private GameMode mode;
+
     /**
      * Constructor that initializes the game state.
      *
-     * @param input shared Scanner object used for keyboard input
+     * @param input shared Scanner used for keyboard input
      */
     public Game(Scanner input) {
         this.input = input;
         this.running = true;
+
+        // Create the player object
         this.player = new Player("Hero");
+
+        // Initialize the starting game mode
+        this.mode = new GameMode("Adventure");
     }
 
     /**
      * Starts the main program loop.
      *
-     * This method runs continuously until the player exits the program.
+     * This method runs until the player chooses to exit.
      */
     public void start() {
 
@@ -89,16 +97,17 @@ public class Game {
     }
 
     /**
-     * Displays the program welcome message.
+     * Displays the welcome message shown at program start.
      */
     private void displayWelcomeMessage() {
-        System.out.println("=================================");
-        System.out.println("   Welcome to the Java Adventure ");
-        System.out.println("=================================");
+
+        Utils.printDivider();
+        System.out.println("   Welcome to the Java Adventure");
+        Utils.printDivider();
     }
 
     /**
-     * Displays the program exit message.
+     * Displays the exit message when the program ends.
      */
     private void displayExitMessage() {
         System.out.println("Game session ended.");
@@ -124,7 +133,7 @@ public class Game {
     /**
      * Processes the player's menu selection.
      *
-     * @param choice the menu option selected by the user
+     * @param choice menu option selected by the user
      */
     private void handleChoice(int choice) {
 
@@ -152,34 +161,31 @@ public class Game {
     }
 
     /**
-     * Placeholder method for the main adventure logic.
-     * Students will expand this method during the project.
+     * Placeholder method where students will implement
+     * their main gameplay logic later in the project.
      */
     private void startAdventure() {
-        System.out.println("Adventure mode coming in Week 2...");
+
+        System.out.println("\nAdventure mode starting...");
+        System.out.println("More gameplay features will be added in later weeks.");
     }
 
     /**
-     * Displays player statistics.
-     *
-     * Player.java owns the player data, so this class
-     * simply calls the Player object's method.
+     * Displays the player's statistics.
      */
     private void viewPlayerStats() {
         player.displayStats();
     }
 
     /**
-     * Demonstrates interaction with another class.
+     * Displays information about the current game mode.
      */
     private void viewGameMode() {
-
-        GameMode mode = new GameMode("Adventure");
         mode.displayMode();
     }
 
     /**
-     * Stops the program loop and exits the game.
+     * Ends the main program loop and exits the application.
      */
     private void exitGame() {
         running = false;
