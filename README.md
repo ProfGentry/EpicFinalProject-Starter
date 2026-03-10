@@ -28,58 +28,9 @@ Use the following branch names for each deliverable:
 
 ## Weekly Development Process
 
-Follow these steps each week when working on your project.
+See [docs/](/docs) for your workflow process.
 
-### 1. Open your project folder
-
-Navigate to your repository folder.
-```cd java-final-project```
-
-### 2. Pull the latest version of your repository
-Always start by pulling the newest version of the project. ```git pull origin main```
-
-### 3. Create the weekly branch
-Create a branch for the current deliverable.
-
-- Example for Week 1: ```git checkout -b week1-structure```
-- Example for Week 2: ```git checkout -b week2-core-actions```
-
-### 4. Develop your project
-
-Now work on your Java project.
-
-Examples of tasks:
-
-- create classes
-- build menus
-- implement game logic
-- test your program
-- fix bugs
-
-### 5. Save your progress with commits
-
-Add your changes: ```git add.```
-
-Create a commit: ```git commit -m "Added main menu and basic game loop"```
-
-
-Good commit messages describe what you changed.
-
-Examples:
-
-- Good: Created Player class and health system
-- Bad: update
-
-
-Commit your work **regularly** as you build features.
-
-### 6. Push your branch to GitHub
-
-Upload your work: ```git push origin week1-structure```
-
-Replace the branch name depending on the week.
-
-### 7. Submit your deliverable in Canvas
+### Submit your deliverable in Canvas
 
 Your Canvas submission must include:
 
