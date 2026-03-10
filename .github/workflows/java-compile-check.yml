@@ -1,1 +1,31 @@
+name: Java Compile Check
 
+on:
+  push:
+    branches:
+      - main
+      - week1-structure
+      - week2-core-actions
+      - week3-collections
+      - week4-game-logic
+      - week5-final-build
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Compile Java files
+        run: javac src/*.java
