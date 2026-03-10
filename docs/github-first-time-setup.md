@@ -97,6 +97,8 @@ This is the repository you will work in for the entire project.
 
 Cloning downloads the repository to your computer.
 
+Make sure you are in the file location you want to save your repository (i.e. Documents)
+
 Open a terminal or Git Bash and run:
 ```git clone https://github.com/yourusername/java-final-project.git```
 
@@ -109,13 +111,10 @@ Your project is now on your computer.
 
 # Step 6 — Open the Project in Your IDE
 
-Open the project folder using your preferred IDE.
+Create a project folder using your preferred IDE.
 
-Examples:
-
-- Eclipse
-- IntelliJ IDEA
-- VS Code
+Create a Java project:
+- Project Name: epic_final_project
 
 Open the folder that contains the repository files.
 
