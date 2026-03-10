@@ -1,5 +1,3 @@
-package edu.ecpi.finalproject;
-
 import java.util.Scanner;
 
 /*
