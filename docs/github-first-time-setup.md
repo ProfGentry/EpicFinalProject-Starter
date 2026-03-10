@@ -109,21 +109,154 @@ Your project is now on your computer.
 
 ---
 
-# Step 6 — Open the Project in Your IDE
+# Step 6 — Create and Open the Project in Eclipse
 
-Create a project folder using your preferred IDE.
+Once you have cloned your repository, you need to open it as a **Java project in Eclipse**.
 
-Create a Java project:
-- Project Name: epic_final_project
+Eclipse organizes code into **workspaces and projects**, so we will import the repository as a project.
 
-Open the folder that contains the repository files.
+<img width="903" height="202" alt="image" src="https://github.com/user-attachments/assets/376c133f-372e-4245-8bda-381eb7994145" />
 
-You should see folders such as:
+---
 
+## 6.1 Open Eclipse
+
+Start Eclipse and select your workspace location when prompted.
+
+### Example 
+workspace: ```Documents/eclipse-workspace```
+
+Click **Launch**.
+
+---
+
+## 6.2 Create a New Java Project
+
+In Eclipse:
+
+1. Click **File**
+2. Select **New**
+3. Click **Java Project**
+
+You will see the New Java Project window.
+
+---
+
+## 6.3 Name the Project
+
+Use the same name as your repository.
+
+### Example:
+- Project Name: ```epic_final_project```
+
+
+Make sure the following options are enabled:
+
+✔ Use default JRE  
+✔ Use project folder as root for sources and class files (Project Layout)
+
+Click **Finish**.
+
+---
+
+## 6.4 Add the Repository Files to the Project
+
+Now we will copy the files from your cloned GitHub repository into the Eclipse project.
+
+1. Locate the cloned repository on your computer.
+
+### Example location:
+```epic-final-project```
+
+Inside the folder you should see something like: 
 - src/
 - docs/
 - screenshots/
 - README.md
+
+---
+
+## 6.5 Copy the Source Files
+
+Inside the repository folder:
+
+Open the `src` folder.
+
+You should see the Java files:
+- Main.java
+- Game.java
+- Player.java
+- GameMode.java
+- Utils.java
+
+Select all of these files and **copy them**.
+
+---
+
+## 6.6 Paste the Files into Eclipse
+
+In Eclipse:
+
+1. Expand your project in the **Package Explorer**
+2. Select **Paste**
+
+Eclipse will now add the Java files to your project.
+
+---
+
+## 6.7 Verify the Package Structure
+
+Your files should now appear like this:
+
+src
+
+├── Main.java
+
+├── Game.java
+
+├── Player.java
+
+├── GameMode.java
+
+└── Utils.java
+
+
+If the package appears correctly, Eclipse has imported the files successfully.
+
+---
+
+## 6.8 Run the Program
+
+To verify everything works:
+
+1. Right-click **Main.java**
+2. Select **Run As**
+3. Click **Java Application**
+
+The console should display the program menu.
+
+Example output:
+
+Welcome to the Java Adventure
+
+=== Main Menu ===
+
+1. Start Adventure
+2. View Player Stats
+3. View Game Mode
+
+4. Exit
+
+
+If you see this menu, your project setup is complete.
+
+---
+
+# Important Tip
+
+Do **not** rename the package:
+
+edu.ecpi.finalproject
 
 
 ---
