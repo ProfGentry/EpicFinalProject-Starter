@@ -1,86 +1,70 @@
-package edu.ecpi.epicfinalproject;
+package edu.ecpi.finalproject;
+
+import java.util.Scanner;
+
 /*
 ---------------------------------------------------------
 STUDENT NOTES
 ---------------------------------------------------------
 
-This file launches the program.
+This file is the entry point of the program.
 
-You SHOULD NOT:
-- Add gameplay logic here
-- Add large methods here
-- Write your entire program inside main()
+Its job is to:
+• start the application
+• create shared resources
+• create the main Game object
+• hand control to Game.java
 
 You MAY:
-- Leave this file unchanged
-- Add minor startup messages if desired
+• leave this file unchanged
+• update small startup details if instructed
 
-Your main development work should happen in:
+You SHOULD:
+• keep this file short and simple
+• let Game.java control the program flow
 
-Game.java        -> controls the program flow
-Player.java      -> stores player information
-GameMode.java    -> represents different modes or actions
-Other classes    -> features you add during the project
+You SHOULD NOT:
+• put game logic here
+• build menus here
+• write large methods here
+• place your entire project inside main()
 
 Think of Main.java as the "power button" of the program.
-
-When the program starts:
-1. Main.java runs
-2. A Game object is created
-3. The Game class controls everything else
+It starts the application, then hands control to Game.java.
 
 ---------------------------------------------------------
 */
-
-import java.util.Scanner;
 
 /**
  * Main
  *
  * Entry point for the Java Final Project application.
  *
- * This class is responsible for launching the program and initializing
- * shared resources needed by the application.
- *
- * In professional software projects, the main class should remain very small
- * and should only be responsible for starting the application.
- *
- * All program logic should be implemented in other classes.
+ * In professional software projects, the main class is usually
+ * kept very small. Its purpose is to launch the application
+ * and initialize any shared resources needed at startup.
  */
 public class Main {
 
     /**
-     * Application entry point.
+     * Starts the Java application.
      *
-     * The JVM begins execution here when the program starts.
+     * The JVM begins execution here when the program runs.
      *
-     * @param args command line arguments (not used in this project)
+     * @param args command-line arguments (not used in this project)
      */
     public static void main(String[] args) {
 
-        // ---------------------------------------------------------
-        // Create a Scanner object for reading user input
-        // ---------------------------------------------------------
-        // This scanner is shared with the Game class so the entire
-        // application can read keyboard input from the player.
+        // Create a shared Scanner for reading keyboard input
         Scanner input = new Scanner(System.in);
 
-        // ---------------------------------------------------------
-        // Create the main Game object
-        // ---------------------------------------------------------
-        // The Game class contains the primary program logic including
-        // menus, gameplay flow, and interactions with other classes.
+        // Create the main game controller object
         Game game = new Game(input);
 
-        // ---------------------------------------------------------
-        // Start the game
-        // ---------------------------------------------------------
-        // Control of the program is now passed to the Game class.
+        // Start the application
         game.start();
 
-        // ---------------------------------------------------------
-        // Close the scanner when the program finishes
-        // ---------------------------------------------------------
+        // Close the Scanner before the program exits
         input.close();
     }
 }
