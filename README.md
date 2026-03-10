@@ -10,12 +10,14 @@ Create a multi-class Java console application such as a game, simulator, or inte
 
 ## Weekly Workflow
 
-```git clone https://github.com/yourusername/java-final-project.git
+```
+git clone https://github.com/yourusername/java-final-project.git
 cd java-final-project
 git checkout -b week1-structure
 git add .
 git commit -m "Created main menu and game loop"
-git push origin week1-structure```
+git push origin week1-structure
+```
 
 Each week, create a new branch for that week's deliverable.
 
