@@ -28,7 +28,7 @@ Use the following branch names for each deliverable:
 
 ## Weekly Development Process
 
-See [docs/](/docs) for your workflow process.
+See [docs/github-survival-guide.md](/docsgithub-survival-guide.md) for your workflow process.
 
 ### Submit your deliverable in Canvas
 
@@ -49,9 +49,6 @@ Example submission:
 - Created main menu and game loop.
 - Added Game Mode class.
 - Program copiles and runs.
-
-<img width="872" height="1056" alt="image" src="https://github.com/user-attachments/assets/197cbc2e-9fec-44be-9479-fe71223b6785" />
-
 
 ## Commit Expectations
 
