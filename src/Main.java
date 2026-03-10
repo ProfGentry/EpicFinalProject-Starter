@@ -1,3 +1,4 @@
+package edu.ecpi.epicfinalproject;
 /*
 ---------------------------------------------------------
 STUDENT NOTES
