@@ -1,4 +1,4 @@
-# Java Final Project Starter
+# Java EPIC Final Project Starter
 
 Welcome to the Java Final Project.
 
